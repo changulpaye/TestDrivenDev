@@ -27,7 +27,7 @@ public class LoginPresenterTest {
 
     @Test
     public void whenUsernameIsEmptyShowError() throws Exception {
-        Mockito.when(mView.getUsername()).thenReturn("");
+        Mockito.when(mView.getUsername()).thenReturn("dfd");
         mLoginPresenter.onLoginButtonClick();
         Mockito.verify(mView).showEmptyUsernameErrorMessage(R.string.empty_username_error);
     }
